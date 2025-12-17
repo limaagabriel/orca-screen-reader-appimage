@@ -52,6 +52,9 @@ jobs:
       run: |
         pip3 install --upgrade pip
     
+    - name: Ensure autogen.sh is executable
+      run: chmod +x autogen.sh
+    
     - name: Build ORCA
       run: |
         ./autogen.sh --prefix=/usr
