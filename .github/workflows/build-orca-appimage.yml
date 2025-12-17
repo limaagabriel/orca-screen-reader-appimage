@@ -51,7 +51,6 @@ jobs:
     - name: Install Python dependencies
       run: |
         pip3 install --upgrade pip
-        pip3 install pyatspi
     
     - name: Build ORCA
       run: |
